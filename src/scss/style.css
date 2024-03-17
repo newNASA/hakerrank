@@ -130,4 +130,49 @@ li {
   background-color: var(--green);
   padding: 7px 10px;
   border-radius: 5px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 0;
+}
+header h1 {
+  font-size: 64px;
+  font-weight: 900;
+  max-width: 780px;
+}
+header p {
+  font-size: 18px;
+  max-width: 620px;
+  font-weight: 300;
+  margin-top: 20px;
+  display: flex;
+  gap: 25px;
+}
+header p .sign, header p .demo {
+  padding: 10px 35px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+header p .sign {
+  color: var(--white);
+  background: var(--green);
+}
+header p .demo {
+  border: 1px solid var(--black);
+  padding: 10px 25px;
+}
+header .client-logos {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+}
+header .client-logos img {
+  max-width: 100px;
 }/*# sourceMappingURL=style.css.map */
