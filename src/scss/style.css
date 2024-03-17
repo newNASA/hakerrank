@@ -1,0 +1,20 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --green:#068932;
+}
+
+.navbar .top {
+  background-color: var(--green);
+  padding: 5px 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .top img {
+  width: 24px;
+}/*# sourceMappingURL=style.css.map */
