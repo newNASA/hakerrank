@@ -2,10 +2,24 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
 }
 
 :root{
+    --white:#fff;
+    --black:#000;
     --green:#068932;
+    --light-black:#B7C9CC;
+    --light-white:#F7F7F7FF;
+}
+
+a{
+    text-decoration: none;
+    color:var(--black) ;
+}
+
+li{
+    list-style: none;
 }
 
 .navbar{
@@ -15,8 +29,118 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        gap: 10px;
         img{
             width: 24px;
+            opacity: 0.5;
+            cursor: pointer;
+            &:hover{
+                opacity: 1;
+            }
+        }
+
+        .info{
+            display: flex;
+            flex: 1;
+            align-items: center;
+            p{
+                color: var(--white) ;
+                font-size: 0.7rem;
+                font-weight: 700;
+            }
+            a{
+                padding: 0 10px;
+                font-size: 0.8rem;
+                color: var(--white);
+                font-weight: 600;
+                border: 1px solid var(--white);
+                border-radius: 4px;
+                line-height: 25px;
+                max-width: 100%;
+                text-align: center;
+                vertical-align: middle;
+                margin: -3px 0 0 8px;
+            }
+        }
+    }
+    .center{
+        height: 40px;
+        background: linear-gradient(90deg, rgb(5, 12, 27), rgb(26, 64, 85) 15%, rgb(26, 64, 85) 35%, rgb(5, 12, 27) 50%) rgb(5, 12, 27);
+        padding: 0 184px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: end;
+        a{
+            color: #B7C9CC;
+            font-size: 14px;
+            transition:0.5s;
+
+            &:hover{
+                color: white;
+            }
+        }
+        hr{
+            height: 40%;
+        }
+    }
+    .bottom{
+        padding: 20px 184px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            img{
+                width: 150px;
+            }
+        }
+        .links{
+            ul{
+                display: flex;
+                gap: 20px;
+                li{
+                    font-size: 14px;
+                    font-weight: 600;
+
+                    &:hover{
+                        color: var(--green);
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .right{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            a{
+                font-size: 14px;
+                font-weight: 600;
+
+                &:first-child{
+                    border-right: 2px solid; 
+                    padding: 0px 15px;
+                    margin-right: 5px;
+
+                    &:hover{
+                        color: var(--green);
+                    }
+                }
+
+                &:nth-child(2){
+                    background-color: var(--light-white);
+                    padding: 7px 10px;
+                    border-radius: 5px;
+                    margin-left: 5px;
+                }
+                
+                &:last-child{
+                    color: var(--white);
+                    background-color: var(--green);
+                    padding: 7px 10px;
+                    border-radius: 5px;
+                }
+            }
         }
     }
 }
