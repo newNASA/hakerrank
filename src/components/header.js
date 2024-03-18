@@ -1,5 +1,6 @@
 import React from 'react';
 import "../scss/style.css";
+import Logos from '../json/logos.json';
 
 function Header() {
     return (
@@ -12,13 +13,11 @@ function Header() {
             </p>
             <p>Over 40% of developers worldwide and 3,000 companies use HackerRank</p>
             <div className='client-logos'>
-                <img src='https://www.hackerrank.com/wp-content/uploads/2022/10/peloton_black.png'></img>
-                <img src='https://www.hackerrank.com/wp-content/uploads/2022/10/atlassian_black.png'></img>
-                <img src='https://www.hackerrank.com/wp-content/uploads/2022/10/bloomberg_black.png'></img>
-                <img src='https://www.hackerrank.com/wp-content/uploads/2022/10/vmware_black.png'></img>
-                <img src='https://www.hackerrank.com/wp-content/uploads/2022/10/stripe_black.png'></img>
-                <img src='https://www.hackerrank.com/wp-content/uploads/2022/10/adobe_black.png'></img>
-                <img src='https://www.hackerrank.com/wp-content/uploads/2022/10/linkedin_black.png'></img>
+                {Logos.map((post) => {
+                    return(
+                        <img src={post.src}></img>
+                    )
+                })}
             </div>
         </header>
     );

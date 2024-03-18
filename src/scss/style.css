@@ -11,7 +11,11 @@
   --green: #068932;
   --medium-black: #738f93;
   --light-black: #b7c9cc;
+  --light-blue:#F7FCFFFF;
   --light-white: #f7f7f7ff;
+  --text-color:#39424e;
+  --light-text:#576871;
+  --dot-color:#D9D9D9;
 }
 
 a {
@@ -235,6 +239,7 @@ header p {
   margin-top: 20px;
   display: flex;
   gap: 25px;
+  color: var(--text-color);
 }
 header p .sign,
 header p .demo {
@@ -258,5 +263,147 @@ header .client-logos {
   margin-top: 24px;
 }
 header .client-logos img {
+  max-width: 100px;
+}
+
+.interview .top {
+  text-align: center;
+}
+.interview .top h1 {
+  font-size: 56px;
+  line-height: 1.3;
+  color: #131414;
+  font-weight: 300;
+  margin: 36px 0;
+}
+.interview .top h1 span {
+  color: var(--green);
+  background: -webkit-linear-gradient(right, #32C766, #068932);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.interview .top p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.59;
+  max-width: 680px;
+  margin: 0 auto;
+  margin-top: 40px;
+  color: var(--light-text);
+}
+.interview .top p a {
+  color: var(--white);
+  background-color: var(--green);
+  padding: 10px 35px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 14px;
+}
+.interview .bottom {
+  padding: 0px 184px;
+  margin-top: 35px;
+}
+.interview .bottom .logos {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+.interview .bottom .img {
+  padding: 0 20px;
+  margin-top: 35px;
+}
+.interview .bottom .img img {
+  max-width: 1084px;
+  width: 100%;
+}
+.interview .about {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  padding: 0 125px;
+  margin-top: 175px;
+}
+.interview .about .left {
+  width: 60%;
+}
+.interview .about .left h3, .interview .about .left span {
+  font-size: 2rem;
+  font-weight: 300;
+}
+.interview .about .left span {
+  color: var(--green);
+  margin-bottom: 50px;
+}
+.interview .about .left p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.59;
+  margin-top: 10px;
+  color: var(--light-text);
+  max-width: 590px;
+}
+.interview .about .right {
+  width: 30%;
+  width: 420px;
+  padding: 64px 32px;
+  background-color: var(--light-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.interview .about .right .fixer {
+  display: flex;
+  width: auto;
+  overflow: hidden;
+  gap: 35px;
+  min-width: 2340px;
+  transition: 0.5s;
+}
+.interview .about .right .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.interview .about .right .card img {
+  margin-bottom: 24px;
+}
+.interview .about .right .card p {
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  color: var(--light-text);
+  max-width: 324px;
+  min-width: 324px;
+}
+.interview .about .right .slider-dots {
+  display: flex;
+  margin-top: 35px;
+  justify-content: center;
+  gap: 15px;
+}
+.interview .about .right .slider-dots .active {
+  background-color: var(--green) !important;
+  transform: scale(1.2);
+}
+.interview .about .right .slider-dots .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--dot-color);
+  transition: 0.25s;
+  cursor: pointer;
+}
+.interview .about .right .slider-dots .dot:hover {
+  transform: scale(1.2);
+}
+.interview .client-logos {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+}
+.interview .client-logos img {
   max-width: 100px;
 }/*# sourceMappingURL=style.css.map */
