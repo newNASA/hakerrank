@@ -2,9 +2,12 @@ import React from 'react'
 import '../scss/style.css'
 import bannerImg from '../imgs/community.jpeg'
 import binTree from '../imgs/binarytree-1.png'
+import focusCode from '../imgs/focusCode.png'
+import topContender from '../imgs/contenders.png'
 function problem() {
     return (
         <div className='problems'>
+            <div className='nav'></div>
             <div className='problems_title'>
                 <h2>
                     It’s not a pipeline problem.
@@ -61,8 +64,34 @@ function problem() {
                         <img src={binTree} />
                     </div>
                 </div>
-                <div className='focusCode'></div>
-                <div className='topContender'></div>
+                <div className='focusCode'>
+                    <div className='focusCode_details'>
+                        <h3>Focus on what really matters: the code.</h3>
+                        <i className="cherry"></i>
+                        <p>Build skills-based coding tests with tech problems a developer would encounter on the job — and hire the team behind your next big idea.</p>
+                        <a href='#'>
+                            Request a demo
+                            <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg_icon svg_arrow_long"><path fill="#000" clip-rule="evenodd" d="M13.5468 0.836109C13.3527 0.593524 12.9987 0.554194 12.7562 0.748261C12.5136 0.942329 12.4742 1.29631 12.6683 1.53889L14.1872 3.4375H0.732544C0.421884 3.4375 0.170044 3.68934 0.170044 4C0.170044 4.31066 0.421884 4.5625 0.732544 4.5625H14.1872L12.6683 6.46111C12.4742 6.70369 12.5136 7.05767 12.7562 7.25174C12.9987 7.44581 13.3527 7.40648 13.5468 7.16389L15.7898 4.36012C15.82 4.3239 15.8451 4.28455 15.8649 4.24312C15.8709 4.23065 15.8765 4.21793 15.8815 4.20498C15.8928 4.17614 15.9016 4.14664 15.9079 4.11679C15.9161 4.07799 15.9201 4.0386 15.9201 3.9993C15.92 3.95724 15.9153 3.91509 15.9058 3.87369C15.8966 3.8336 15.8829 3.79421 15.8646 3.75629C15.8465 3.71871 15.8239 3.68257 15.7968 3.64861L15.7898 3.6399M13.5468 0.836109L15.7898 3.6399Z"></path></svg>
+                        </a>
+                    </div>
+                    <div className='focusCode_img'>
+                        <img src={focusCode} />
+                    </div>
+                </div>
+                <div className='topContender'>
+                    <div className='topContender_details'>
+                        <h3>Identify top contenders.</h3>
+                        <i className="cherry"></i>
+                        <p>Identify top contenders and invite them to meet your team using data-driven decisions that help level the playing field for developers everywhere.</p>
+                        <a href='#'>
+                            Learn more
+                            <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg_icon svg_arrow_long"><path fill="#000" clip-rule="evenodd" d="M13.5468 0.836109C13.3527 0.593524 12.9987 0.554194 12.7562 0.748261C12.5136 0.942329 12.4742 1.29631 12.6683 1.53889L14.1872 3.4375H0.732544C0.421884 3.4375 0.170044 3.68934 0.170044 4C0.170044 4.31066 0.421884 4.5625 0.732544 4.5625H14.1872L12.6683 6.46111C12.4742 6.70369 12.5136 7.05767 12.7562 7.25174C12.9987 7.44581 13.3527 7.40648 13.5468 7.16389L15.7898 4.36012C15.82 4.3239 15.8451 4.28455 15.8649 4.24312C15.8709 4.23065 15.8765 4.21793 15.8815 4.20498C15.8928 4.17614 15.9016 4.14664 15.9079 4.11679C15.9161 4.07799 15.9201 4.0386 15.9201 3.9993C15.92 3.95724 15.9153 3.91509 15.9058 3.87369C15.8966 3.8336 15.8829 3.79421 15.8646 3.75629C15.8465 3.71871 15.8239 3.68257 15.7968 3.64861L15.7898 3.6399M13.5468 0.836109L15.7898 3.6399Z"></path></svg>
+                        </a>
+                    </div>
+                    <div className='topContender_img'>
+                        <img src={topContender} />
+                    </div>
+                </div>
             </div>
         </div>
     );
