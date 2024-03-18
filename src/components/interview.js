@@ -6,23 +6,19 @@ import '../scss/style.css';
 
 function Interview() {
     const [position, setPosition] = useState(0);
-    const [activeDot, setActiveDot] = useState(0); // State to store the index of the active dot
+    const [activeDot, setActiveDot] = useState(0);
 
     useEffect(() => {
-        // Update the position of the fixer div and active dot every 5 seconds
         const interval = setInterval(() => {
-            // Calculate the new active dot index based on the current active dot
             const newActiveDot = (activeDot + 1) % 6;
             setActiveDot(newActiveDot);
 
-            // Calculate the new position based on the new active dot index
-            const newPosition = -(newActiveDot * 358); // Assuming each card is 358px wide
+            const newPosition = -(newActiveDot * 358); 
             setPosition(newPosition);
         }, 5000);
 
-        // Clear the interval when the component unmounts
         return () => clearInterval(interval);
-    }, [activeDot]); // Re-run effect whenever activeDot changes
+    }, [activeDot]);
 
     return (
         <div className='interview'>
@@ -36,7 +32,7 @@ function Interview() {
             <div className='bottom'>
                 <div className='logos'>
                     {AnimatedLogos.map((logo, index) => (
-                        <img key={index} src={logo.src} width={logo.width} height={logo.height} alt={`logo-${index}`} />
+                        <img src={logo.src} width={logo.width} height={logo.height} />
                     ))}
                 </div>
                 <div className='img'>
@@ -67,7 +63,7 @@ function Interview() {
                                 className={`dot ${index === activeDot ? 'active' : ''}`}
                                 onClick={() => {
                                     setActiveDot(index);
-                                    setPosition(-(index * 358)); // Assuming each card is 358px wide
+                                    setPosition(-(index * 358));
                                 }}
                             ></div>
                         ))}
