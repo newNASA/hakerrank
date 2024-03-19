@@ -3,8 +3,15 @@ import AnimatedLogos from "../json/animated-logos.json";
 import AboutCards from "../json/about-cards.json";
 import Logos from "../json/logos.json";
 import "../scss/style.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Interview() {
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   const [position, setPosition] = useState(0);
   const [activeDot, setActiveDot] = useState(0);
 
@@ -39,7 +46,8 @@ function Interview() {
       <div className="bottom">
         <div className="logos">
           {AnimatedLogos.map((logo, index) => (
-            <img
+            <img data-aos="fade-up"
+            data-aos-anchor-placement="center-center"
               key={index}
               src={logo.src}
               width={logo.width}
