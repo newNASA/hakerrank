@@ -113,6 +113,14 @@ li {
 .navbar .center hr {
   height: 40%;
 }
+.navbar .top-scroll {
+  width: 100%;
+  box-shadow: 0 3px 10px 0 rgba(115, 143, 147, 0.3);
+  position: fixed;
+  z-index: 999;
+  margin: 0;
+  background-color: var(--white);
+}
 .navbar .bottom {
   padding: 0px 184px;
   display: flex;
