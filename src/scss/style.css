@@ -204,8 +204,11 @@ li {
   font-weight: 400;
   color: var(--medium-black);
 }
-.navbar .bottom .links ul .products,
 .navbar .bottom .links ul .solution {
+  display: none;
+  transform: translateX(-35%);
+}
+.navbar .bottom .links ul .products {
   display: none;
   transform: translateX(-35%);
 }

@@ -54,7 +54,6 @@ function Navbar() {
         setActiveDivIndex((prevIndex) => (prevIndex === 0 ? 2 : prevIndex - 1));
     };
 
-
     function handleMouseEnterProducts() {
         setIsProductsVisible(true);
     }

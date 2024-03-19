@@ -219,9 +219,12 @@ li {
             }
           }
         }
+        .solution{
+          display: none;
+          transform: translateX(-35%);
+        }
 
-        .products,
-        .solution {
+        .products {
           display: none;
           transform: translateX(-35%);
         }
