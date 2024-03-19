@@ -6,6 +6,7 @@ import righttarrow from "../imgs/arrowright.svg";
 function Navbar() {
     const [isProductsVisible, setIsProductsVisible] = useState(false);
     const [isSolutionVisible, setIsSolutionVisible] = useState(false);
+    const [isResourcesVisible, setIsResourcesVisible] = useState(false);
     const [activeDivIndex, setActiveDivIndex] = useState(0);
     const [isTop, setIsTop] = useState(true);
 
@@ -68,6 +69,14 @@ function Navbar() {
 
     function handleMouseLeaveSolution() {
         setIsSolutionVisible(false);
+    }
+
+    function handleMouseEnterResources() {
+        setIsResourcesVisible(true);
+    }
+
+    function handleMouseLeaveResources() {
+        setIsResourcesVisible(false);
     }
 
     return (
@@ -179,7 +188,53 @@ function Navbar() {
                                 </div>
                             </div>
                         </li>
-                        <li>Resources</li>
+                        <li>Resource
+                            <div className={`resources dropdown ${isResourcesVisible ? "visible" : ""}`}
+                                onMouseEnter={handleMouseEnterResources} onMouseLeave={handleMouseLeaveResources}>
+                                <div className="left-link">
+                                    <span>Learn</span>
+                                    <div className="link">
+                                        <a href="#">Blog</a>
+                                        <h5>Hiring best practices and industry insights.</h5>
+                                    </div>
+                                    <div className="link">
+                                        <a href="#">Roles directory</a>
+                                        <h5>Explore the definitive directory of tech roles.</h5>
+                                    </div>
+                                    <div className="link">
+                                        <a href="#">Resources library</a>
+                                        <h5>Guides, datasheets, and data-driven content.</h5>
+                                    </div>
+                                    <div className="link">
+                                        <a href="#">Customer Stories</a>
+                                        <h5>How leading companies use HackerRank.</h5>
+                                    </div>
+                                    <div className="link">
+                                        <a href="#">Developer Skills Report</a>
+                                        <h5>Key trends and forecasts for 2024.</h5>
+                                    </div>
+                                </div>
+                                <div className="right-link">
+                                    <span>Product Help</span>
+                                    <div className="link">
+                                        <a href="#">Screen</a>
+                                        <h5>Save time and accelerate your hiring.</h5>
+                                    </div>
+                                    <div className="link">
+                                        <a href="#">Interview</a>
+                                        <h5>Conduct stellar technical interviews.</h5>
+                                    </div>
+                                    <div className="link">
+                                        <a href="#">Engage</a>
+                                        <h5>Promote your tech brand</h5>
+                                    </div>
+                                    <div className="link">
+                                        <a href="#">SkillUp</a>
+                                        <h5>Mobilize your tech talent.</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
                         <li>Pricing</li>
                     </ul>
                 </div>

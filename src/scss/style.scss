@@ -219,12 +219,8 @@ li {
             }
           }
         }
-        .solution{
-          display: none;
-          transform: translateX(-35%);
-        }
 
-        .products {
+        .products, .solution, .resources {
           display: none;
           transform: translateX(-35%);
         }
@@ -1012,6 +1008,7 @@ footer {
       color: var(--light-text);
       padding-bottom: 1em;
       font-size: 0.923em;
+      text-transform: uppercase;
     }
     a {
       display: block;

@@ -204,11 +204,7 @@ li {
   font-weight: 400;
   color: var(--medium-black);
 }
-.navbar .bottom .links ul .solution {
-  display: none;
-  transform: translateX(-35%);
-}
-.navbar .bottom .links ul .products {
+.navbar .bottom .links ul .products, .navbar .bottom .links ul .solution, .navbar .bottom .links ul .resources {
   display: none;
   transform: translateX(-35%);
 }
@@ -981,6 +977,7 @@ footer .top span a {
   color: var(--light-text);
   padding-bottom: 1em;
   font-size: 0.923em;
+  text-transform: uppercase;
 }
 footer .top a {
   display: block;
