@@ -406,4 +406,30 @@ header .client-logos img {
 }
 .interview .client-logos img {
   max-width: 100px;
+}
+
+.home-links {
+  display: flex;
+  margin-top: 50px;
+  padding-left: 125px;
+}
+.home-links .left, .home-links .right {
+  width: 50%;
+}
+.home-links .left h3, .home-links .left span, .home-links .right h3, .home-links .right span {
+  font-size: 2rem;
+  font-weight: 300;
+  max-width: 450px;
+}
+.home-links .left span, .home-links .right span {
+  color: var(--green);
+  margin-bottom: 50px;
+}
+.home-links .left p, .home-links .right p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.59;
+  margin-top: 10px;
+  color: var(--light-text);
+  max-width: 590px;
 }/*# sourceMappingURL=style.css.map */

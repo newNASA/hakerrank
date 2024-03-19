@@ -434,3 +434,29 @@ header {
     }
   }
 }
+
+.home-links{
+  display: flex;
+  margin-top: 50px;
+  padding-left: 125px;
+  .left, .right{
+    width: 50%;
+    h3, span{
+      font-size: 2rem;
+      font-weight: 300;
+      max-width: 450px;
+    }
+    span{
+      color: var(--green);
+      margin-bottom: 50px;
+    }
+    p{
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.59;
+      margin-top: 10px;
+      color: var(--light-text);
+      max-width: 590px;
+    }
+  }
+}
